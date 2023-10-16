@@ -9,4 +9,7 @@ CR.execute(f"create table Customer(PID int(5), PName varchar(255), Age int, SUIT
 CR.execute(f"create table Admin(ROOMNO int, AVAILABILITY char(1), SUITE char(1), PID int(5), CHECKIN date, CHECKOUT date)")
 CR.execute(f"use Hotel_Taj")
 
-BookRoom()
+print("CUSTOMER PAGE")
+n=input("What would you like to do today? \nA- Book Room\nB- Find Room\nC. ")
+if n=='A':
+  BookRoom()
